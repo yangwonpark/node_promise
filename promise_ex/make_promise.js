@@ -7,4 +7,6 @@ const wait1seconds = new Promise((resolve, reject) => {
 
 wait1seconds.then((result) => {
     console.log(result + "\n프로미스 이행 완료");
+}).catch( (err) => {
+    console.log(err);
 });
